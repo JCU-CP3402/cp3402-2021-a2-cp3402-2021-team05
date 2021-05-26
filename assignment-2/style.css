@@ -12,7 +12,6 @@ Requires PHP: 7.0
 License: GNU General Public License v3 or Later
 License URI: https://www.gnu.org/licenses/gpl.html
 Text Domain: generic
-
 Generic WordPress Theme © 2015-2021 GenericTools
 Generic is distributed under the terms of the GNU GPL
 */
@@ -21,6 +20,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:16px;color:#767676;line-height:normal;word-wrap:break-word;background:#222}
 
+#header{ 
+	background-color: black; }
 h1, h2, h3, h4, h5, h6{font-weight:bold;margin-bottom:30px}
 h2, h3, h4, h5, h6{margin-top:40px}
 h1{font-size:35px}
@@ -39,51 +40,16 @@ em{font-style:italic}
 pre{overflow-x:auto;white-space:pre-wrap}
 pre, code{font-family:'courier new',courier,serif}
 hr{height:1px;border:0;margin:30px 0;background:#ccc}
-blockquote{
-  padding:15px;
-  border-left:4px solid #ccc;
-  margin:30px 0}
+blockquote{padding:15px;border-left:4px solid #ccc;margin:30px 0}
 blockquote p:first-of-type{margin-top:0}
-.entry-content ul, .widget-container ul, 
-.comment-body ul, .entry-content ol, 
-.widget-container ol, .comment-body ol{
-  font-family:-apple-system,BlinkMacSystemFont,
-    "Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,
-    "Helvetica Neue",
-    sans-serif;
-  margin:30px 0 30px 60px}
-.entry-content ul ul, .widget-container ul ul, 
-.comment-body ul ul, .entry-content ol ol, 
-.widget-container ol ol, .comment-body ol ol{
-  margin-top:0;
-  margin-bottom:0}
-.entry-content ol, .widget-container ol, 
-.comment-body ol{
-  list-style:decimal outside;
-  list-style-type:decimal-leading-zero;
-  margin-left:70px}
-.entry-content ul li:before, .widget-container ul li:before, 
-.comment-body ul li:before{
-  position:absolute;
-  margin-left:-20px;
-  content:'— '}
-.entry-content li, .widget-container li, .comment-body li{
-  line-height:125%;
-  margin:20px 0}
-input, textarea{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  font-size:16px;padding:15px;
-  border:0;
-  border-bottom:1px solid transparent;
-  outline:0;margin-top:10px;
-  background:#f6f6f6}
+.entry-content ul, .widget-container ul, .comment-body ul, .entry-content ol, .widget-container ol, .comment-body ol{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;margin:30px 0 30px 60px}
+.entry-content ul ul, .widget-container ul ul, .comment-body ul ul, .entry-content ol ol, .widget-container ol ol, .comment-body ol ol{margin-top:0;margin-bottom:0}
+.entry-content ol, .widget-container ol, .comment-body ol{list-style:decimal outside;list-style-type:decimal-leading-zero;margin-left:70px}
+.entry-content ul li:before, .widget-container ul li:before, .comment-body ul li:before{position:absolute;margin-left:-20px;content:'— '}
+.entry-content li, .widget-container li, .comment-body li{line-height:125%;margin:20px 0}
+input, textarea{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:16px;padding:15px;border:0;border-bottom:1px solid transparent;outline:0;margin-top:10px;background:#f6f6f6}
 input:focus, textarea:focus{border-bottom:1px solid #007acc}
-input[type="submit"], button, .button{display:inline-block;
-  font-family:georgia,serif;
-  font-size:18px;color:#ED7014;
-  text-align:center;text-decoration:none;
-  padding:15px 25px;border:0;
-  background:#007acc;
-  cursor:pointer}
+input[type="submit"], button, .button{display:inline-block;font-family:georgia,serif;font-size:18px;color:#fff;text-align:center;text-decoration:none;padding:15px 25px;border:0;background:#007acc;cursor:pointer}
 input[type="submit"]:hover, input[type="submit"]:focus, button:hover, button:focus, .button:hover, .button:focus{opacity:0.8}
 a img, input[type="image"], iframe{border:0}
 a img:hover, a:focus img{opacity:0.8}
@@ -102,11 +68,7 @@ table{width:100%;margin:30px 0}
 #menu{margin-top:10px;float:right}
 #menu div:first-of-type{float:left}
 #menu ul{font-size:0}
-#menu ul, #menu li, #menu a{position:relative;
-  display:inline;
-  list-style:none;margin:0;
-  padding:0;
-  transition:unset}
+#menu ul, #menu li, #menu a{position:relative;display:inline;list-style:none;margin:0;padding:0;transition:unset}
 #menu li.menu-item-has-children > a:after, #menu li.page_item_has_children > a:after{font-family:serif;content:' ▾'}
 #menu li.current-menu-item a, #menu li.current_page_parent a{}
 #menu a{display:inline-block;font-size:18px;color:#fff;text-align:right;text-decoration:none;line-height:33px;padding-bottom:10px;margin-top:-1px;margin-right:25px}
@@ -210,4 +172,3 @@ h2.entry-title, h3.widget-title{margin-top:0}
 .skip-link{left:-9999rem;top:2.5rem;z-index:999999999;text-decoration:underline}
 .skip-link:focus{display:block;left:6px;top:7px;font-size:14px;font-weight:600;text-decoration:none;line-height:normal;padding:15px 23px 14px;z-index:100000;right:auto}
 .visually-hidden:not(:focus):not(:active), .form-allowed-tags:not(:focus):not(:active){position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px, 1px, 1px, 1px);white-space:nowrap}
-.search-submit{display:none !important}
